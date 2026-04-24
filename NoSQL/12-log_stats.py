@@ -5,6 +5,7 @@ Provide stats about Nginx logs stored in MongoDB
 from pymongo import MongoClient
 
 def log_stats():
+    """Provide stats about Nginx logs stored in MongoDB"""
     x = MongoClient('mongodb://localhost:27017').logs.nginx
 
 
